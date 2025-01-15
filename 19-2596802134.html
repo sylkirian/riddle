@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan 7 Digit</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body data-stage="2">
+    <div class="container">
+        <h1>Bilangan 7 Digit</h1>
+        <div>
+            Carilah bilangan dengan 7 digit yang memenuhi syarat berikut.
+            <ul>
+                <li>Tidak boleh ada angka yang berulang.</li>
+                <li>Tidak boleh ada angka nol.</li>
+                <li>Hanya ada dua angka yang merupakan bilangan prima.</li>
+                <li>Digit ganjil berisi angka ganjil dan digit genap berisi angka genap.</li>
+                <li>Angka pada digit genap harus lebih besar dari angka yang berada tepat pada satu digit sebelumnya.
+                </li>
+                <li>
+                    Selisih angka antara digit yang bersebelahan harus selang-seling.
+                    Misalnya: selisih antara angka digit pertama dan kedua adalah 1 dan selisih antara angka digit kedua
+                    dan ketiga adalah 2,
+                    maka selisih antara angka digit ketiga dan keempat harus 1 dan selisih antara angka digit keempat
+                    dan kelima harus 2,
+                    begitu seterusnya.
+                </li>
+            </ul>
+        </div>
+        <div class="input">
+            <div class="input-box">
+                <input type="text" id="jawaban" placeholder="Jawaban" />
+                <button type="button" id="btn-jawaban">Jawab</button>
+            </div>
+            <div id="salah">Jawaban masih salah</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/main.js"></script>
+</body>
+
+</html>
