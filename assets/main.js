@@ -9,7 +9,7 @@ if (halaman) {
     halaman = JSON.parse(halaman)
     delete halaman[0]
 } else {
-    halaman = {1: ["4651b41d4f", "The First Gatekeeper"]}
+    halaman = { 1: ["4651b41d4f", "The First Gatekeeper"] }
     localStorage.setItem("halaman", JSON.stringify(halaman))
 }
 
@@ -80,7 +80,9 @@ const toc = () => {
         sorted.push(no)
     }
 
-    sorted.sort()
+    sorted.sort(function (a, b) {
+        return a - b;
+    })
 
     const toc = document.getElementById("toc")
     for (let i = 0; i < sorted.length; i++) {
